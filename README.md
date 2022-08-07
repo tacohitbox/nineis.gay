@@ -1,2 +1,2 @@
 # nineis.gay
-Website for a friend, again :p
+A single-page website for a friend, again :p

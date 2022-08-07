@@ -1,0 +1,125 @@
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #6b028b;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.background {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border: none;
+  object-fit: cover;
+  transition: opacity 0.5s;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media (prefers-reduced-motion) {
+  .background img {
+    display: none !important;
+    transition: none !important;
+  }
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+
+  max-width: 500px;
+
+  text-align: center;
+
+  background: #000000ad;
+  color: #ffffff;
+  transition: background 0.1s;
+
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.main:hover,
+.main:focus,
+.main:focus-within {
+  background: #000000;
+}
+
+@media (max-width: 750px) {
+  .main {
+    width: 95%;
+    max-width: none;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .main {
+    background: #000000;
+    color: #ffffff;
+  }
+}
+
+.main h1 {
+  margin: 0;
+}
+
+.main a {
+  color: white;
+}
+
+.socials button {
+  /*width: 100%;*/
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+
+  cursor: pointer;
+
+  transition: background 0.1s;
+
+  border: 0;
+  background: #282828;
+  color: #ffffff;
+}
+
+.socials button:hover,
+.socials button:focus {
+  background: #575757;
+}
+
+@media (prefers-reduced-motion) {
+  .socials button:hover,
+  .socials button:focus {
+    background: #282828 !important;
+  }
+}
+
+.yellowcab > iframe {
+  width: 100%;
+  min-height: 165px;
+}
